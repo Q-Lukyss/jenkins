@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone le dépôt (la configuration peut varier selon ton système SCM)
-                git branch: 'main', url: 'https://ton-depot.git'
+                git branch: 'main', url: 'https://github.com/Q-Lukyss/jenkins'
             }
         }
         stage('Build Docker Image') {
